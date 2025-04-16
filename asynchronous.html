@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    script{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align:center;
+        font-size : 20px;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Asynchronous</h1>
+    <p id="result"></p>
+    <hr>
+    <script>
+async function subtract(a,b){
+            let answer = await a - b;
+            document.getElementById("result").innerHTML=answer
+        }
+        subtract(40,10);
+    </script>
+</body>
+</html>
